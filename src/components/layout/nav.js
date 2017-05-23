@@ -20,10 +20,10 @@ export default class Nav extends React.Component {
                 <IndexLink className="nav-link" to='/' activeClassName="active">Start</IndexLink>
               </li>
               <li>
-                <Link className="nav-link" to='kontakt' activeClassName="active">Kontakt</Link>
+                <Link className="nav-link" to='streaming' activeClassName="active">Streaming</Link>
               </li>
               <li>
-                <Link className="nav-link" to='streaming' activeClassName="active">Streaming</Link>
+                <Link className="nav-link" to='kontakt' activeClassName="active">Kontakt</Link>
               </li>
             </ul>
           </nav>
