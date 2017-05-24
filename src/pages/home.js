@@ -10,7 +10,7 @@ const imgStyle = {
 class Home extends Component {
   render() {
     return (
-      <div className="inner cover">
+      <div>
         <img style={ imgStyle } src="logo.png" alt="logo" />
       </div>
     );

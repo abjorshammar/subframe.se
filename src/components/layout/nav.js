@@ -11,24 +11,18 @@ const imgStyle = {
 export default class Nav extends React.Component {
   render() {
     return (
-      <div className="masthead clearfix">
-        <div className="inner">
-          <h3 className="masthead-brand"><img style={ imgStyle } src="logo.png" alt="logo" /></h3>
-          <nav>
-            <ul className="nav masthead-nav">
-              <li>
-                <IndexLink className="nav-link" to='/' activeClassName="active">Start</IndexLink>
-              </li>
-              <li>
-                <Link className="nav-link" to='streaming' activeClassName="active">Streaming</Link>
-              </li>
-              <li>
-                <Link className="nav-link" to='kontakt' activeClassName="active">Kontakt</Link>
-              </li>
-            </ul>
-          </nav>
+      <nav>
+        <div className="nav-wrapper">
+          <a href="#" className="brand-logo">
+            <img src="logo_small.png" alt="logo" />
+          </a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li><IndexLink to='/'>Start</IndexLink></li>
+            <li><Link to='streaming'>Streaming</Link></li>
+            <li><Link to='kontakt'>Kontakt</Link></li>
+          </ul>
         </div>
-      </div>
+      </nav>
     );
   }
 }
