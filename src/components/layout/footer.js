@@ -3,7 +3,7 @@ import React from 'react';
 export default class Footer extends React.Component {
   render() {
     return (
-        <footer className="page-footer">
+        <footer className="page-footer grey darken-3">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
@@ -21,10 +21,9 @@ export default class Footer extends React.Component {
               </div>
             </div>
           </div>
-          <div className="footer-copyright">
-            <div className="container">
+          <div className="footer-copyright grey-text text-darken">
+            <div className="container center-align">
             © Subframe AB
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
