@@ -42,7 +42,7 @@ export default class Nav extends React.Component {
             <li><NavLink to='/streaming'>Streaming</NavLink></li>
             <li><NavLink to='/kontakt'>Kontakt</NavLink></li>
           </ul>
-          <a href="#" data-activates="slide-out" className="button-collapse"><i className="material-icons">menu</i></a>
+          <a href="/" data-activates="slide-out" className="button-collapse"><i className="material-icons">menu</i></a>
         </div>
       </nav>
     );
