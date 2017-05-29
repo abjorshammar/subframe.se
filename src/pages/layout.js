@@ -1,28 +1,27 @@
 import React from "react";
 
-import Footer from "../components/layout/footer";
 import Nav from "../components/layout/nav";
+import Main from "../components/layout/main";
+import Footer from "../components/layout/footer";
 
 export default class Layout extends React.Component {
   render() {
-    const { location } = this.props;
     return (
-      <div>
-
-        <Nav location={location} />
-
-        <div className="inner cover">
-          <div className="row">
-            <div className="col-lg-12">
-
-              {this.props.children}
-
-            </div>
+      <body>
+        <header>
+          <Nav />
+        </header>
+        <main className="grey darken-2 white-text">
+          <div className="container">
+            <Main />
           </div>
-        </div>
-        <Footer/>
-      </div>
-
+        </main>
+        <footer>
+          <Footer/>
+        </footer>
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      </body>
     );
   }
 }
