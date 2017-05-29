@@ -19,8 +19,6 @@ export default class Layout extends React.Component {
         <footer>
           <Footer/>
         </footer>
-        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
       </body>
     );
   }
