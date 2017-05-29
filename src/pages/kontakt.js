@@ -6,9 +6,13 @@ class Kontakt extends Component {
     return (
       <div>
         <div className="row">
-          <div className="col">
-            <h1 className="text-center">Kontakta oss!</h1>
-            <p>"kontakt [at] subframe [punkt] se"</p>
+          <div className="col s12 valign-wrapper">
+            <div className="valign center-block">
+              <br></br>
+              <br></br>
+              <h3 className="center-align">Kontakt</h3>
+              <p className="center-align">"kontakt [at] subframe [punkt] se"</p>
+            </div>
           </div>
         </div>
       </div>

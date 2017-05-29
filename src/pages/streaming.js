@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
 
 
 class Streaming extends Component {
@@ -7,33 +8,38 @@ class Streaming extends Component {
       <div className="section">
         <div className="row">
 
-          <div className="col s6">
-            <div className="card grey darken-3">
-              <div className="card-image waves-effect waves-block waves-light">
-                <img className="activator" src="livestreaming.png" alt="livestreaming"/>
+          <div className="col s12 l6">
+            <div className="card medium grey darken-3">
+              <div className="card-image">
+                <img src="livestreaming.png" alt="livestreaming"/>
               </div>
               <div className="card-content">
-                <span className="card-title activator grey-text text-darken-4">Livestreaming<i className="material-icons right">more_vert</i></span>
+                <b>Livestreaming</b>
+                <p>Vi erbjuder livestreaming av stora och små evenemang, allt från föreläsningar och presentationer till banracing och konserter.</p>
               </div>
-              <div className="card-reveal">
-                <span className="card-title grey-text text-darken-4">Livestreaming<i className="material-icons right">close</i></span>
-                <p>Vi erbjuder livestreaming av stora och små evenemang, allt från föreläsningar och presentationer till banracing och konserter.<br />
-                Vi försöker ge så mycket värde som möjligt genom att erbjuda alternativa tekniska lösningar och kan bygga integrationer där det behövs.</p>
+              <div className="card-action">
+                {/*  Enable when about page is created
+                <NavLink to='/streaming' className="blue-text text-lighten-3">Läs mer</NavLink>
+                */}
+                <NavLink to='/kontakt' className="blue-text text-lighten-3">Kontakta oss</NavLink>
               </div>
             </div>
           </div>
 
-          <div className="col s6">
+          <div className="col s12 l6">
             <div className="card medium grey darken-3">
               <div className="card-image">
                 <img src="video-production.png" alt="videoproduktion"/>
               </div>
               <div className="card-content">
-                <h5>Videoproduktion</h5>
+                <b>Videoproduktion</b>
                 <p>Vi hjälper dig med enklare videoproduktioner som t.ex informationsvideos, ditt företags interna presentationer eller utbildningsmaterial.</p>
               </div>
               <div className="card-action">
-                <a className="blue-text text-lighten-3" href="/kontakt">Kontakta oss för offert!</a>
+                {/*  Enable when about page is created
+                <NavLink to='/streaming' className="blue-text text-lighten-3">Läs mer</NavLink>
+                */}
+                <NavLink to='/kontakt' className="blue-text text-lighten-3">Kontakta oss</NavLink>
               </div>
             </div>
           </div>
