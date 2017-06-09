@@ -9,6 +9,9 @@ export default class Nav extends React.Component {
       closeOnClick: true
     });
   }
+  componentDidUpdate() {
+    $('div[id^=sidenav-overlay]').remove();
+  }
   render() {
     return (
       <nav className="grey darken-3">
